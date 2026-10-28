@@ -7,8 +7,6 @@ def leer_arbol(ruta):
 
 
 def altura_arbol(arbol, r):
-    # a la cantidad de nodos le resto los de cada nivel (1, r, r*r, ...)
-    # y cuento cuantos niveles hicieron falta
     restantes = len(arbol)
     nodos_en_nivel = 1
     altura = 0
