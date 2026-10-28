@@ -13,8 +13,6 @@ def barrido_pre_orden(arbol, r):
     while pila:
         x = pila.pop()
         res.append(arbol[x])
-        # hijos de x: r*x+1 ... r*x+r
-        # se apilan del ultimo al primero para que el primero salga antes
         for i in range(r, 0, -1):
             hijo = r * x + i
             if hijo < n:
