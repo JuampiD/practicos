@@ -9,9 +9,6 @@ def leer_arbol(ruta):
 def barrido_post_orden(arbol, r):
     n = len(arbol)
     res = []
-    # pila de pares (x, e)
-    # e = 0: todavia no recorri los hijos de x
-    # e = 1: ya recorri los hijos de x, lo puedo visitar
     pila = [(0, 0)]
     while pila:
         x, e = pila.pop()
